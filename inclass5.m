@@ -1,8 +1,15 @@
-h%Inclass assignment 5. 
+%AW: See comment below. 0.8/1.
+
+%Inclass assignment 5. 
 
 % 1. (a) Write a function that reads in an image and displays it so that 1%
 % of the pixels are black and 1% of the pixels are white. Hint: your
 % function can call the stretchlim function, see the help for that function.
+
+%AW: Your code in this section doesn't work as expected. I think it should have been:
+% z=imadjust(img,stretchlim(img,[low, high])); with the [low, high] being passed to stretchlim function.
+% -0.2. 
+
 img=imread('pic3.jpg')
 STRETCHLIM(img)
 % (b) Write a second function where the fraction of pixels to display as
